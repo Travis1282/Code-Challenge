@@ -1,0 +1,15 @@
+.multiFamily, .accountable, .exchangeFriendly, .alignedInterests, .riskMangement{
+	color: rgba(53, 61, 67, 0);
+	-webkit-transition: all 0.9s ease;
+	-moz-transition: all 0.9s ease;
+	-o-transition: all 0.9s ease;
+	transition: all 0.9s ease;
+	
+	position: absolute;
+    width: 100%;
+    color: rgba(53, 61, 67, 0);
+    transform: translateX(500px);
+
+/*	display: none*/
+}
+

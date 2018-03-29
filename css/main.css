@@ -205,7 +205,9 @@ li {
 }
 
 /*----------Article-------------*/
-
+.articleTitleWrapper{
+	height: 100px;
+}
 .articleWrapper{
 	display: -webkit-box;
 	display: -moz-box;
