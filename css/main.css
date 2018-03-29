@@ -73,7 +73,6 @@ li {
     text-align: right;
     flex-grow: inherit;
     justify-content: right;
-	height: fit-content;
 }
 
 .mainNav li{
@@ -86,6 +85,7 @@ li {
     margin: 10px 5px 0 5px;
     color: rgba(255, 255, 255, .6);
     cursor: pointer; 
+
 }
 
 .mainNav li a:hover	{
@@ -103,11 +103,22 @@ li {
 /*----------Hero-------------*/
 
 .hero{
-
 	position: relative;
     height: 80vh;
     background: cadetblue;
     z-index: 0;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.heroNav{
+    height: 100%;
+    width: 100%;
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
@@ -125,9 +136,44 @@ li {
 	text-transform: uppercase;
     margin: 20px 15px 15px 20px;
     cursor: pointer; 
+    color: rgba(255, 255, 255, .6);
+    width: 120px;
+    text-align: center;
+
 }
+
+.heroNav li a {
+	position: absolute;
+	text-align: center;
+	height: 0px;
+}
+
 .heroNav li a:hover	{
-		color: #353d43;
+		color: white;
+}
+.heroNav li a .diamond:hover	{
+		border: 1px solid white;  
+}
+.learnMore{
+	font-size: 10px;
+    font-weight: 400;
+    text-align: center;
+    margin: 10px;
+}
+
+.diamond {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    border: 1px solid rgba(255, 255, 255, .6);
+    transform: rotate(45deg) translate(-75px, -75px);
+}
+
+.up {
+	transform: translate(-80px, -30px);
+}
+.down {
+	transform: translate(-80px, 30px);
 }
 
 /*----------Main Content-------------*/
