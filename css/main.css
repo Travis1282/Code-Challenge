@@ -1,5 +1,281 @@
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500|Montserrat:200,400,700');
+
+
 /*for setting up the layout*/
-html{
-    border: 5px solid red;
+/**{
+    border: 1px solid red !important;
+}*/
+
+/*----------elements-------------*/
+
+
+h1{
+	font-family: 'Times New Roman', Times, serif;
+	font-family:'EB Garamond', serif;
+	font-weight: 500;
+	font-size: 40px;
+	text-align: center;
+	text-transform: uppercase;
+    margin: 40px 0 40px 0;
+    letter-spacing: 4px;
+	color: #353d43;
+
 }
+
+h2{
+	font-family: 'Times New Roman', Times, serif;
+	font-family:'EB Garamond', serif;
+	font-weight: 400;
+	font-size: 28px;
+	font-style: italic;
+	text-align: center;
+	margin: 60px 0 30px 0;
+	color: #353d43;
+}
+
+h3{
+	font-family: Arial, Helvetica, sans-serif;
+	font-family:'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 13px;
+	text-transform: uppercase;
+    margin: 20px 0 10px 0;
+    color: #94999c;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+	float: right;
+}
+
+/*----------Header-------------*/
+
+.header{
+	position: absolute;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	justify-content: space-between;
+	z-index: 1;
+    width: 100%;
+}
+.mainNav{
+    margin: 20px;
+    text-align: right;
+    flex-grow: inherit;
+    justify-content: right;
+	height: fit-content;
+}
+
+.mainNav li{
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-family:'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 12px;
+	text-transform: uppercase;
+    margin: 10px 5px 0 5px;
+    color: rgba(255, 255, 255, .6);
+    cursor: pointer; 
+}
+
+.mainNav li a:hover	{
+	color: white;
+}
+
+.logo{
+    height: 100px;
+    width: 250px;
+    background: white;
+    margin: 20px 20px 20px 40px;
+    /*flex-basis: 250px | auto;*/
+}
+
+/*----------Hero-------------*/
+
+.hero{
+
+	position: relative;
+    height: 80vh;
+    background: cadetblue;
+    z-index: 0;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.heroNav li{
+	font-family: Arial, Helvetica, sans-serif;
+	font-family:'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 13px;
+	text-transform: uppercase;
+    margin: 20px 15px 15px 20px;
+    cursor: pointer; 
+}
+.heroNav li a:hover	{
+		color: #353d43;
+}
+
+/*----------Main Content-------------*/
+
+
+.pageNav{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	justify-content: center;
+    width: 100%;
+}
+
+.pageNav li{
+	font-family: Arial, Helvetica, sans-serif;
+	font-family:'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 13px;
+	text-transform: uppercase;
+    margin: 20px 15px 15px 20px;
+    color: #94999c;
+    cursor: pointer; 
+}
+.pageNav li a:hover	{
+		color: #353d43;
+}
+
+/*----------Article-------------*/
+
+.articleWrapper{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: nowrap;
+}
+
+.articleHolder{
+	width:700px;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	justify-content: center;
+	-webkit-flex-flow: row wrap;
+}
+.article{
+	width:300px;
+	margin: 0 20px;
+	font-family:'Montserrat', sans-serif;
+	font-size:13px;
+	line-height: 17px;
+}
+
+
+#slideLeft, #slideRight{
+	font-family:'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 22px;
+	color: #353d43;
+}
+#slideLeft{
+			margin: 50px 0 0 50px;
+}
+
+#slideRight{
+		margin: 50px 50px 0 0;
+}
+
+.nextButton {
+	text-align: center;
+	margin:20px;
+	font-family:'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 15px;
+	line-height: 22px;
+	color: #353d43;
+
+}
+
+
+/*----------Meet the Team-------------*/
+
+.meetTeam{
+	margin-top: 50px;
+	height: 250px;
+	background: navy;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+
+}
+.meetTeam h1{
+	color: white;
+
+}
+
+/*----------Footer-------------*/
+
+footer{
+/*	height: 70px;
+*/	background-color: #4a5157;
+
+}
+.footerText{
+	padding:40px 0 20px 10vw;
+	font-weight: 200;
+	font-family:'Montserrat', sans-serif;
+	color: white;
+	font-size: 12px;
+}
+
+.copyright{
+	padding:10px 0 40px 10vw;
+	font-weight: 200;
+	font-family:'Montserrat', sans-serif;
+	color: white;
+	font-size: 9px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
