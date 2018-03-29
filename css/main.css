@@ -137,7 +137,7 @@ li {
     margin: 20px 15px 15px 20px;
     cursor: pointer; 
     color: rgba(255, 255, 255, .6);
-    width: 120px;
+    width: 115px;
     text-align: center;
 
 }
@@ -152,7 +152,7 @@ li {
 		color: white;
 }
 .heroNav li a .diamond:hover	{
-		border: 1px solid white;  
+		border: 1.5px solid white;  
 }
 .learnMore{
 	font-size: 10px;
@@ -165,15 +165,15 @@ li {
     position: relative;
     width: 160px;
     height: 160px;
-    border: 1px solid rgba(255, 255, 255, .6);
-    transform: rotate(45deg) translate(-75px, -75px);
+    border: 1.5px solid rgba(255, 255, 255, .6);
+    transform: rotate(45deg) translate(-80px, -80px);
 }
 
 .up {
-	transform: translate(-80px, -30px);
+	transform: translate(-90px, -30px);
 }
 .down {
-	transform: translate(-80px, 30px);
+	transform: translate(-90px, 30px);
 }
 
 /*----------Main Content-------------*/
