@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500|Montserrat:200,400,700');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700|Montserrat:200,400,700');
 
 
 /*for setting up the layout*/
@@ -11,7 +11,7 @@
 
 h1{
 	font-family: 'Times New Roman', Times, serif;
-	font-family:'EB Garamond', serif;
+	font-family:'Libre Baskerville', serif;
 	font-weight: 500;
 	font-size: 40px;
 	text-align: center;
@@ -24,7 +24,7 @@ h1{
 
 h2{
 	font-family: 'Times New Roman', Times, serif;
-	font-family:'EB Garamond', serif;
+	font-family:'Libre Baskerville', serif;
 	font-weight: 400;
 	font-size: 28px;
 	font-style: italic;
@@ -97,8 +97,12 @@ li {
     width: 250px;
     background: white;
     margin: 20px 20px 20px 40px;
-    /*flex-basis: 250px | auto;*/
 }
+
+.bullet{
+	margin: 0 20px 0 20px;
+}
+
 
 /*----------Hero-------------*/
 
@@ -126,6 +130,10 @@ li {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+  	background: linear-gradient(to right, rgba(18, 80, 69, 0.8), rgba(18, 80, 69, 0.8)),url(../img/P1030379.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .heroNav li{
@@ -149,16 +157,22 @@ li {
 }
 
 .heroNav li a:hover	{
-		color: white;
+    color: rgba(255, 255, 255, 1);
 }
-.heroNav li a .diamond:hover	{
-		border: 1.5px solid white;  
+.heroNav li .diamond:hover	{
+	border: 1.5px solid white;  
 }
+.learnMore:hover{
+    color: rgba(255, 255, 255, 1);
+}
+
 .learnMore{
 	font-size: 10px;
     font-weight: 400;
     text-align: center;
     margin: 10px;
+    color: rgba(255, 255, 255, .6);
+
 }
 
 .diamond {
@@ -169,10 +183,11 @@ li {
     transform: rotate(45deg) translate(-80px, -80px);
 }
 
-.up {
+#up {
 	transform: translate(-90px, -30px);
+
 }
-.down {
+#down {
 	transform: translate(-90px, 30px);
 }
 
@@ -188,6 +203,7 @@ li {
 	-webkit-flex-flow: row wrap;
 	justify-content: center;
     width: 100%;
+    color: rgb(148, 153, 156);
 }
 
 .pageNav li{
@@ -197,16 +213,18 @@ li {
 	font-size: 13px;
 	text-transform: uppercase;
     margin: 20px 15px 15px 20px;
-    color: #94999c;
     cursor: pointer; 
 }
-.pageNav li a:hover	{
-		color: #353d43;
+.pageNav li:hover	{
+	color: #353d43;
 }
+
 
 /*----------Article-------------*/
 .articleTitleWrapper{
 	height: 100px;
+    overflow: hidden;
+    position: relative;
 }
 .articleWrapper{
 	display: -webkit-box;
@@ -243,16 +261,17 @@ li {
 	font-size: 20px;
 	line-height: 22px;
 	color: #353d43;
+    cursor: pointer; 
 }
 #slideLeft{
-			margin: 50px 0 0 50px;
+		margin: 50px 0 0 50px;
 }
 
 #slideRight{
-		margin: 50px 50px 0 0;
+	margin: 50px 50px 0 0;
 }
 
-.nextButton {
+#nextButton {
 	text-align: center;
 	margin:20px;
 	font-family:'Montserrat', sans-serif;
@@ -260,8 +279,10 @@ li {
 	font-size: 15px;
 	line-height: 22px;
 	color: #353d43;
+	cursor: pointer; 
 
 }
+
 
 
 /*----------Meet the Team-------------*/
@@ -277,6 +298,10 @@ li {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+  	background: linear-gradient(to right, rgba(100, 100, 100, 0.6), rgba(100, 100, 100, 0.6)),url(../img/team.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 
 }
@@ -307,10 +332,6 @@ footer{
 	color: white;
 	font-size: 9px;
 }
-
-
-
-
 
 
 
