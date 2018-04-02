@@ -7,28 +7,40 @@
 }
 
 .multiFamily, .accountable, .exchangeFriendly, .alignedInterests, .riskMangement{
-	position: absolute;
+  	position: absolute;
     width: 100%;
     color: rgba(53, 61, 67, 0);
     transform: translateX(500px);
 }
 
 #up{
-animation: 1s ease-out 0s 1 slideUp;
+animation: 1.3s ease-out 0s 1 slideUp;
 }
+
 @keyframes slideUp {
   0% {
-    transform: translate(-800px, 500px);
+    opacity: 0; 
+    transform: translate(-300px, 300px);
+
+  }40%{
+        opacity: 0; 
+  }100%{
+    opacity: 1;
   }
 
 }
 
 #down{
-animation: 1s ease-out 0s 1 slideDown;
+animation: 1.3s ease-out 0s 1 slideDown;
 }
 @keyframes slideDown {
   0% {
-    transform: translate(800px, -500px);
+    opacity: 0; 
+    transform: translate(300px, -300px);
+  }40%{
+        opacity: 0; 
+  }100%{
+    opacity: 1;
   }
 
 }

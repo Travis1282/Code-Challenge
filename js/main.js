@@ -5,36 +5,40 @@
 //---------Scroll Page and Trigger Main Content Slider ----------//
 
 const selectScroll = (e) => {
-	selectContent(e)
-	scrollIt(document.querySelector('.mainContent'), 800);
+	if (e.target != e.currentTarget) {
+		selectContent(e)
+		scrollIt(document.querySelector('.mainContent'), 800);
+	}
 }
 
 
 //---------Select Main Content Slider ----------//
 
 const selectContent = (e) => {
-	selected = e.target.id.slice(0, -1)//- transform id to match class
-	const allTitles = document.getElementsByClassName('articleTitleWrapper')//--- get all titles to compare to the clicked id
-	let selectedTitle = 0;
+	if (e.target != e.currentTarget) {
+		selected = e.target.id.slice(0, -1)//- transform id to match class
+		const allTitles = document.getElementsByClassName('articleTitleWrapper')//--- get all titles to compare to the clicked id
+		let selectedTitle = 0;
 
-	for (let i = allTitles["0"].children.length - 1; i >= 0; i--) { //---- if item is the one selected animate to center and 100% opacity
-		if (selected == allTitles["0"].children[i].className){
-			selectedTitle = i;
-			selectedTitle == 0 ? slideLeft.style.color = 'rgba(53, 61, 67, 0)': window.slideLeft.style.color = 'rgba(53, 61, 67, 1)' ;
-			selectedTitle == allTitles["0"].children.length-1 ? window.slideRight.style.color = 'rgba(53, 61, 67, 0)': window.slideRight.style.color = 'rgba(53, 61, 67, 1)';
+		for (let i = allTitles["0"].children.length - 1; i >= 0; i--) { //---- if item is the one selected animate to center and 100% opacity
+			if (selected == allTitles["0"].children[i].className){
+				selectedTitle = i;
+				selectedTitle == 0 ? slideLeft.style.color = 'rgba(53, 61, 67, 0)': window.slideLeft.style.color = 'rgba(53, 61, 67, 1)' ;
+				selectedTitle == allTitles["0"].children.length-1 ? window.slideRight.style.color = 'rgba(53, 61, 67, 0)': window.slideRight.style.color = 'rgba(53, 61, 67, 1)';
 
-			allTitles["0"].children[i].style.transform='translateX(0px)';
-			allTitles["0"].children[i].style.color = 'rgba(53, 61, 67, 1)';
-		}	
-		else if ( i > selectedTitle ){//---- if item ordered after the one selected make sure it is to the right
-			allTitles["0"].children[i].style.transform='translateX(500px)';
-			allTitles["0"].children[i].style.color = 'rgba(53, 61, 67, 0)';
-		}	else {//---- if item ordered before the one selected keep make sure it is to the left
-			allTitles["0"].children[i].style.transform='translateX(-500px)';
-			allTitles["0"].children[i].style.color = 'rgba(53, 61, 67, 0)';
+				allTitles["0"].children[i].style.transform='translateX(0px)';
+				allTitles["0"].children[i].style.color = 'rgba(53, 61, 67, 1)';
+			}	
+			else if ( i > selectedTitle ){//---- if item ordered after the one selected make sure it is to the right
+				allTitles["0"].children[i].style.transform='translateX(500px)';
+				allTitles["0"].children[i].style.color = 'rgba(53, 61, 67, 0)';
+			}	else {//---- if item ordered before the one selected keep make sure it is to the left
+				allTitles["0"].children[i].style.transform='translateX(-500px)';
+				allTitles["0"].children[i].style.color = 'rgba(53, 61, 67, 0)';
+			}
 		}
+		highlights(e)
 	}
-	highlights(e)
 }
 
 
@@ -51,13 +55,13 @@ const	pageNav = document.querySelector('.pageNav')
 
 
 
-//---------Hilight Selected Sections ----------//
+//---------Highlight Selected Sections ----------//
 
 const highlights = (e) => {
 
-		selected = e.target.id.slice(0, -1)
+	selected = e.target.id.slice(0, -1)
 
-		const allTitles = document.getElementsByClassName('articleTitleWrapper')
+	const allTitles = document.getElementsByClassName('articleTitleWrapper')
 
 	for (let i = 0; heroDiamond.querySelectorAll('.diamond').length > i; i++){
 
@@ -71,6 +75,7 @@ const highlights = (e) => {
 		
 		const unselected = diamond[i].id.slice(0, -1) + 'P';
 		const pageNavHighlight = document.getElementById(unselected)
+
 		if (unselected != selected + 'P'){
 			pageNavHighlight.style.color = 'rgb(148, 153, 156)';
 		}else{
@@ -86,16 +91,11 @@ const highlights = (e) => {
 			const selector = ''+selected+'P';
 			const pageNavHighlight = document.getElementById(selector)
 			pageNavHighlight.style.color = 'rgb(53, 61, 67)';
-
 		}
 
 	}
 }
 
-
-const mainNav = document.querySelector('.mainNav');
-console.log(mainNav)
-		// mainNav[0].style.color = '1.5px solid rgba(255, 255, 255, .6)';
 
 
 
