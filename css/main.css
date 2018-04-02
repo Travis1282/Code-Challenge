@@ -79,13 +79,16 @@ li {
 	float: left;
 	font-family: Arial, Helvetica, sans-serif;
 	font-family:'Montserrat', sans-serif;
-	font-weight: 700;
-	font-size: 12px;
+	font-size: 9px;
 	text-transform: uppercase;
     margin: 10px 5px 0 5px;
     color: rgba(255, 255, 255, .6);
     cursor: pointer; 
 
+}
+.mainNav li a{
+	font-weight: 700;
+	font-size: 12px;
 }
 
 .mainNav li a:hover	{
@@ -332,7 +335,6 @@ footer{
 	color: white;
 	font-size: 9px;
 }
-
 
 
 
