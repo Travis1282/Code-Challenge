@@ -1,18 +1,6 @@
-/*
- * Made by Erik Terwan
- * 24th of November 2015
- * All rights reserved
- *
- *
- * If you are thinking of using this in
- * production code, beware of the browser
- * prefixes.
- */
+/*Adapted from https://codepen.io/erikterwan/pen/grOZxx
+by Erik Terwan*/
 
-body
-{
-  overflow-x: hidden; /* needed because hiding the menu on the right side is not perfect,  */
-}
 
   #menuToggle input
   {
@@ -22,6 +10,7 @@ body
 
 
 @media screen and (max-width: 860px) {
+
 
   #menuToggle
   {
@@ -47,15 +36,13 @@ body
     
     cursor: pointer;
     
-    opacity: 0; /* hide this */
-    z-index: 2; /* and place it over the hamburger */
+    opacity: 0; 
+    z-index: 2; 
     
     -webkit-touch-callout: none;
   }
 
-  /*
-   * Just a quick hamburger
-   */
+
   #menuToggle span
   {
     display: block;
@@ -108,9 +95,13 @@ body
     transform: rotate(-45deg) translate(0, -1px);
   }
 
+  #menuToggle input:checked ~ .header{
+    height: 100%
+    background:blue;
+  }
 
-  #menu
-  {
+
+  #menu{ 
     position: absolute;
     width: 300px;
     margin: -100px 0 0 0;
@@ -119,7 +110,6 @@ body
     right: -100px;
     height: 100vh;
     background: #ededed;
-    /*list-style-type: none;*/
     -webkit-font-smoothing: antialiased;  
     transform-origin: 0% 0%;
     transform: translate(100%, 0);

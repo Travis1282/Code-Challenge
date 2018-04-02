@@ -56,7 +56,15 @@ li {
 
 /*----------Header-------------*/
 
+  #menuToggle input
+  {
+    left: -50px;
+    opacity: 0; 
+  }
+
+
 .header{
+	overflow-x: hidden;
 	position: absolute;
 	display: -webkit-box;
 	display: -moz-box;
