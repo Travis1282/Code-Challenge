@@ -11,6 +11,9 @@ by Erik Terwan*/
 
 @media screen and (max-width: 860px) {
 
+  .mainNav{
+    margin:0;
+  }
 
   #menuToggle
   {
@@ -97,7 +100,6 @@ by Erik Terwan*/
 
   #menuToggle input:checked ~ .header{
     height: 100%
-    background:blue;
   }
 
 

@@ -1,9 +1,10 @@
 @media only screen and (max-width: 960px) {
-    .logo {     
-        height: 50px;
+	.logo {
 	    width: 180px;
-	   	margin: 20px 10px 10px 20px;
-	   }
+	    height: 50px;
+	    margin: 20px 10px 10px 20px;
+	    z-index: 4;
+	}
 }
 
 
